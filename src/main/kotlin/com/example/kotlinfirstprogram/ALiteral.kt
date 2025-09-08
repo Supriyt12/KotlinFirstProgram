@@ -1,4 +1,4 @@
-package com.example.kotlinfirstprogram
+package com.example.kotlinfirstprogram.com.example.kotlinfirstprogram
 fun main(args: Array<String>) {
     var intLiteral = 5
     var doubleLiteral = .02
