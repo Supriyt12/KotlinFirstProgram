@@ -1,34 +1,32 @@
 fun main(args: Array<String>) {
-    val myName : String = "Supriyanto"
-    for (chr in myName){
-        print(chr)
+    // Membuat variabel String
+    val myName: String = "Supriyanto"
+
+    // Perulangan for untuk membaca setiap karakter dalam String
+    for (chr in myName) {
+        print(chr) // mencetak karakter satu per satu
     }
-    print('\n')
+    print('\n') // pindah baris setelah selesai mencetak
 
-    // String tipe dengan Operator  +
+    // String bisa digabungkan dengan operator +
+    val s = "abc" + 1 // hasilnya "abc1"
+    println(s + "def") // hasilnya "abc1def"
 
-     val s = "abc" + 1
-    println(s +"def" )
-
-    // Untuk dapat menyimpan data String yang memuat keywords Kotlin bisa dengan menggunakan
-    //raw String yang dipisahkan dengan triple quotes (""").
-
+    // Raw String menggunakan triple quotes (""")
+    // Raw String bisa menyimpan teks apa adanya termasuk spasi dan enter
     var text = """
         for ( c in "foo")
             print (c)
-                
     """
     println(text)
 
-    // Kita juga dapat menghapus spasi yang tidak diperlukan dalam raw String seperti contoh kode
-
-    var text1  = """
+    // Raw String bisa dirapikan dengan trimMargin()
+    // Tanda '|' dipakai sebagai penanda margin yang ingin dipotong
+    var text1 = """
         | Tell me and I forget.
         | Teach me  and I  remember.
-        |Involve me and I learn.
-        |(Benjamin Franklin)
-
+        | Involve me and I learn.
+        | (Benjamin Franklin)
     """.trimMargin()
     println(text1)
-
 }
